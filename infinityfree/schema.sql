@@ -9,6 +9,7 @@ CREATE TABLE products (
   sizes VARCHAR(120) NOT NULL DEFAULT 'One size',
   color VARCHAR(60) NOT NULL DEFAULT 'Natural',
   image_color VARCHAR(20) NOT NULL DEFAULT '#e4ebe1',
+  image_path VARCHAR(255) DEFAULT NULL,
   active TINYINT(1) NOT NULL DEFAULT 1,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
