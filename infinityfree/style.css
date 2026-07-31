@@ -11,6 +11,7 @@
 .cart-page .summary>div:nth-child(2){display:none}.cart-page .summary .total{margin-top:8px}.cart-page .summary .muted{font-size:10px;line-height:1.5}.menu-backdrop.is-visible{display:block}
 @media(max-width:700px){.menu-backdrop{background:#0006;display:none;inset:0;position:fixed;z-index:4}.menu-backdrop.is-visible{display:block}.sidebar{z-index:5}.mobile-menu-toggle{z-index:6}.success-page{padding:16px}.success-card{padding:32px 20px}}
 .success-page{align-items:center;display:grid;min-height:100svh;place-items:center}.success-card{margin:auto}.success-card .dark{margin-inline:auto}
+.mobile-menu-toggle.is-open{opacity:0;pointer-events:none}
 @media(max-width:700px){.sidebar{height:100svh;left:0!important;right:auto!important;top:0;width:100vw;transform:translateX(-100%);padding:28px 24px}.sidebar.is-open{transform:translateX(0)}html[dir=rtl] .sidebar,html[dir=rtl] .sidebar.is-open{left:0!important;right:auto!important}.sidebar .brand{margin-bottom:52px}.side-nav{gap:14px}.side-nav a{font-size:14px;padding:14px 12px}.sidebar .logout{margin-top:auto}.admin-main{position:relative;z-index:1}}
 .sidebar{width:50vw}
 @media(max-width:700px){.sidebar{width:50vw;min-width:190px;max-width:300px}}
