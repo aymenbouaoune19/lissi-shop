@@ -16,7 +16,7 @@ function db(): PDO {
     return $pdo;
 }
 function money($amount): string { global $config; return '<span class="money" dir="ltr">' . number_format((float)$amount, 0, ',', ' ') . ' ' . e($config['currency']) . '</span>'; }
-function valid_phone(string $phone): bool { return (bool)preg_match('/^(?:\+213|00213|0)(?:5|6|7)[0-9]{8}$/', preg_replace('/[ .-]/', '', $phone)); }
+function valid_phone(string $phone): bool { return (bool)preg_match('/^0[567][0-9]{8}$/', $phone); }
 function cart(): array { return $_SESSION['cart'] ?? []; }
 function cart_count(): int { return array_sum(cart()); }
 function add_to_cart(int $id, int $quantity = 1): void { $_SESSION['cart'][$id] = min(99, (int)($_SESSION['cart'][$id] ?? 0) + max(1, $quantity)); }
