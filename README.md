@@ -1,6 +1,8 @@
 # Lissi
 
-Responsive ecommerce storefront foundation for an Algerian lifestyle shop. The current prototype includes a product catalog, category filters, search, stock visibility, cart quantities, Cash on Delivery checkout, Bureau/home delivery rate selection, and a lightweight inventory control view.
+Responsive ecommerce storefront foundation for an Algerian lifestyle shop. The repository contains the original Next.js prototype and an InfinityFree-compatible PHP/MySQL deployment package in `infinityfree/`.
+
+For InfinityFree hosting, use the PHP version. InfinityFree does not run the Node.js server required by Next.js.
 
 ## Run locally
 
@@ -28,3 +30,7 @@ Open `http://localhost:3000`.
 ## Hosting and domain
 
 Vercel is the simplest fit: import the GitHub repository, use the default Next.js build settings, and deploy. Buy a domain from a registrar such as Namecheap, Cloudflare Registrar, or OVH, then add it in Vercel and follow the displayed DNS records. Use HTTPS provided by Vercel. For production orders, use a managed PostgreSQL provider such as Neon or Supabase and never commit API keys.
+
+## InfinityFree deployment
+
+See [infinityfree/README.md](infinityfree/README.md). Upload the contents of `infinityfree/` to InfinityFree `htdocs`, import `infinityfree/schema.sql` in phpMyAdmin, and configure `config.local.php` with your MySQL credentials. The PHP version includes the catalog, cart, COD checkout, Bureau/home rates, order storage, stock reduction, and admin inventory controls.
