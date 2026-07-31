@@ -15,3 +15,5 @@
 @media(max-width:700px){.sidebar{height:100svh;left:0!important;right:auto!important;top:0;width:100vw;transform:translateX(-100%);padding:28px 24px}.sidebar.is-open{transform:translateX(0)}html[dir=rtl] .sidebar,html[dir=rtl] .sidebar.is-open{left:0!important;right:auto!important}.sidebar .brand{margin-bottom:52px}.side-nav{gap:14px}.side-nav a{font-size:14px;padding:14px 12px}.sidebar .logout{margin-top:auto}.admin-main{position:relative;z-index:1}}
 .sidebar{width:50vw}
 @media(max-width:700px){.sidebar{width:50vw;min-width:190px;max-width:300px}}
+.admin-main .dashboard-title{height:auto;min-height:0}.admin-main .dashboard-title .stats{width:100%}.admin-main .admin-section{clear:both}
+@media(max-width:700px){.admin-main .dashboard-title{align-items:stretch;display:flex;flex-direction:column;gap:22px;margin:24px 0 42px}.admin-main .dashboard-title h2{margin-bottom:0}.admin-main .dashboard-title .stats{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:0}.admin-main .stats b{min-width:0}.admin-main .admin-section{margin-top:0;padding-top:0}.admin-main .admin-section h3{margin-top:0}}
