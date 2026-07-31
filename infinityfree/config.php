@@ -9,4 +9,6 @@ return [
     'admin_user' => 'admin',
     'admin_password' => 'CHANGE_THIS_PASSWORD',
     'currency' => 'DA',
+    'recaptcha_site_key' => 'YOUR_RECAPTCHA_SITE_KEY',
+    'recaptcha_secret_key' => 'YOUR_RECAPTCHA_SECRET_KEY',
 ];
